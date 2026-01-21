@@ -8,7 +8,7 @@
 </style>
 @extends('all_views.viewmaster.index')
 
-@section('title', 'FirenzeRENDICONTA')
+@section('title', 'RomaRENDICONTA')
 
 @section('extra_style') 
   <link rel="stylesheet" href="{{ URL::asset('/') }}plugins/select2/css/select2.min.css">

@@ -15,8 +15,8 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{ route('dashboard') }}" class="brand-link">
-      <img src="{{ URL::asset('/') }}dist/img/logo1.png" alt="bsFI Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">FirenzeRENDICONTA</span>
+      <!--<img src="{{ URL::asset('/') }}dist/img/logo1.png" alt="bsFI Logo" class="brand-image img-circle elevation-3" style="opacity: .8">!-->
+      <span class="brand-text font-weight-light">RomaRENDICONTA</span>
     </a>
 
     <!-- Sidebar -->

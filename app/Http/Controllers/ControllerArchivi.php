@@ -111,9 +111,13 @@ class ControllerArchivi extends Controller
 		
 		$definizione_utenti=DB::table('online.db as db')
 		->select('db.id','u.id as idu','db.attiva','db.n_tessera','db.utentefillea','r.role_id')
-		->leftjoin('bsfi.users as u','db.n_tessera','u.email')
-		->leftjoin('bsfi.model_has_roles as r','u.id','r.model_id')
-		->where('db.id_prov_associate','=',153)
+		->leftjoin('rendiconta_rm.users as u','db.n_tessera','u.email')
+		->leftjoin('rendiconta_rm.model_has_roles as r','u.id','r.model_id')
+		->where(function ($query) {
+			$query->where('db.id_prov_associate','=',153)
+				  ->orWhere('db.id_prov_associate','=',108);
+		})
+
 		->where('attiva','=',1)
 		->orderBy('db.n_tessera')
 		->get();
