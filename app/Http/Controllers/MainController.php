@@ -314,7 +314,7 @@ public function __construct()
 	}
 
 	public function get_aziende_e() {
-		$table="anagrafe.t2_tosc_a";
+		$table="anagrafe.t4_lazi_a";
 		$elenco = DB::table($table)
 		->select('denom as azienda','c2 as id_fiscale')
 		//->where('attivi', "=","S")
