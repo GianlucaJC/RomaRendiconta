@@ -307,7 +307,7 @@ public function __construct()
 		$table="cpnl.iscritti";
 		$elenco = DB::table($table)
 		->select('azienda','partita_iva as id_fiscale')
-		->where('provincia_fo', "=","FI")
+		->where('provincia_fo', "=","RM")
 		->groupBy('azienda')
 		->orderBy('azienda')->get();
 		return $elenco;		
